@@ -1,0 +1,125 @@
+/* Privacy Policy & Terms pages — reuse the landing tokens from index.css. */
+
+.legal {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  background:
+    radial-gradient(60vmax 60vmax at 0% 0%, var(--bg-glow-1), transparent 60%),
+    radial-gradient(60vmax 60vmax at 100% 100%, var(--bg-glow-2), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+.legal-top,
+.legal-card,
+.legal-foot {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.legal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.legal-back {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--card);
+  box-shadow: var(--clay);
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.legal-back:hover {
+  color: var(--primary);
+}
+
+.legal-card {
+  padding: clamp(20px, 5vw, 44px);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  border: 2px solid var(--card-edge);
+  box-shadow: var(--clay);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.legal-card h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(34px, 7vw, 48px);
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+.legal-date {
+  margin: 6px 0 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.legal-card h2 {
+  margin: 28px 0 6px;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.legal-card p,
+.legal-card ul {
+  margin: 0 0 12px;
+}
+
+.legal-card ul {
+  padding-left: 20px;
+}
+
+.legal-card li + li {
+  margin-top: 6px;
+}
+
+.legal-card a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.legal-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.legal-foot nav {
+  display: flex;
+  gap: 16px;
+}
+
+.legal-foot nav a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.legal-foot nav a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.legal-back:focus-visible,
+.legal-card a:focus-visible,
+.legal-foot a:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}

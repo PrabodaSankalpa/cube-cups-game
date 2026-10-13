@@ -5,9 +5,13 @@
 // ─────────────────────────────────────────────────────────────────────────────
 export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.praboda.cubecups";
 
-// Pages to be added next — linked from the footer.
 export const PRIVACY_URL = "/privacy.html";
 export const TERMS_URL = "/terms.html";
+
+// Shown on the Privacy Policy and Terms pages.
+export const DEVELOPER_NAME = "Praboda Sankalpa";
+export const CONTACT_EMAIL = "hi.sankalpadev@gmail.com";
+export const LEGAL_LAST_UPDATED = "October 13, 2026";
 
 // Cube sprite per palette color ID (0..5) — same order as the app's assets/index.ts.
 export const CUBE_SPRITES = [

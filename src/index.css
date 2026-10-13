@@ -53,10 +53,14 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
+body {
   margin: 0;
+}
+
+/* Landing page only (index.html sets the class) — legal pages scroll normally. */
+html.no-scroll,
+html.no-scroll body,
+html.no-scroll #root {
   height: 100%;
   overflow: hidden;
 }
