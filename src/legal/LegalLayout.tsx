@@ -13,13 +13,13 @@ export function LegalLayout({ title, children }: LegalLayoutProps) {
   return (
     <div className="legal">
       <header className="legal-top">
-        <a className="brand" href="/" aria-label="Cube Cups home">
+        <a className="brand" href="./" aria-label="Cube Cups home">
           <span className="brand-icon">
-            <img src="/assets/app-icon.png" alt="" />
+            <img src="assets/app-icon.png" alt="" />
           </span>
           <span>Cube Cups</span>
         </a>
-        <a className="legal-back" href="/">
+        <a className="legal-back" href="./">
           ← Back to home
         </a>
       </header>

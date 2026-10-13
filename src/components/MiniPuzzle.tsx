@@ -47,14 +47,14 @@ export function MiniPuzzle() {
     <div className={`puzzle${solved ? " is-solved" : ""}`}>
       <div className="puzzle-head">
         <span className="puzzle-title">
-          <img src="/assets/ui/play.png" alt="" />
+          <img src="assets/ui/play.png" alt="" />
           Try a level
         </span>
         <span className="puzzle-moves" aria-live="polite">
           {moves} {moves === 1 ? "move" : "moves"}
         </span>
         <button type="button" className="icon-btn" onClick={reset} aria-label="Restart level">
-          <img src="/assets/ui/re-try.png" alt="" />
+          <img src="assets/ui/re-try.png" alt="" />
         </button>
       </div>
 
@@ -74,7 +74,7 @@ export function MiniPuzzle() {
       <p className="puzzle-hint" aria-live="polite">
         {solved ? (
           <>
-            <img src="/assets/ui/trophy.png" alt="" /> Solved! 299 more levels are waiting —{" "}
+            <img src="assets/ui/trophy.png" alt="" /> Solved! 299 more levels are waiting —{" "}
             <a href={PLAY_STORE_URL} target="_blank" rel="noopener">
               get the app
             </a>

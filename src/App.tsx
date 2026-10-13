@@ -4,9 +4,9 @@ import { PlayBadge } from "./components/PlayBadge";
 import { PRIVACY_URL, TERMS_URL } from "./config";
 
 const FEATURES = [
-  { icon: "/assets/ui/star.png", label: "300 levels" },
-  { icon: "/assets/ui/check.png", label: "Plays offline" },
-  { icon: "/assets/ui/idea.png", label: "Hints & undo" },
+  { icon: "assets/ui/star.png", label: "300 levels" },
+  { icon: "assets/ui/check.png", label: "Plays offline" },
+  { icon: "assets/ui/idea.png", label: "Hints & undo" },
 ];
 
 export default function App() {
@@ -15,9 +15,9 @@ export default function App() {
       <FloatingCubes />
 
       <header className="topbar">
-        <a className="brand" href="/" aria-label="Cube Cups home">
+        <a className="brand" href="./" aria-label="Cube Cups home">
           <span className="brand-icon">
-            <img src="/assets/app-icon.png" alt="" />
+            <img src="assets/app-icon.png" alt="" />
           </span>
           <span>Cube Cups</span>
         </a>
@@ -26,7 +26,7 @@ export default function App() {
 
       <main className="hero">
         <section className="copy">
-          <img className="pile" src="/assets/cube-pile.png" alt="" />
+          <img className="pile" src="assets/cube-pile.png" alt="" />
           <h1 className="title">Cube Cups</h1>
           <p className="tagline">Sort the cubes. Fill the cups. Relax.</p>
           <p className="lede">

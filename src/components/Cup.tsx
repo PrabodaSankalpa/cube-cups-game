@@ -25,7 +25,7 @@ export function Cup({ index, tube, selected, shake, onClick }: CupProps) {
       aria-label={label}
       aria-pressed={selected}
     >
-      <img className="cup-art" src="/assets/cup.png" alt="" draggable={false} />
+      <img className="cup-art" src="assets/cup.png" alt="" draggable={false} />
       <span className="cup-stack">
         {tube.map((color, i) => (
           <img
@@ -39,7 +39,7 @@ export function Cup({ index, tube, selected, shake, onClick }: CupProps) {
         ))}
       </span>
       {/* Same art again, faint, over the cubes — reads as the front of the glass. */}
-      <img className="cup-art cup-front" src="/assets/cup.png" alt="" draggable={false} />
+      <img className="cup-art cup-front" src="assets/cup.png" alt="" draggable={false} />
     </button>
   );
 }
